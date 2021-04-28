@@ -1,75 +1,89 @@
 const data = {
   "Large flat": {
-    "area": "42m^2",
+    "area": "<strong>42m<sup>2</sup><strong>",
     "rooms": 72,
-    "floors": 3,
-    "floor": 4,
     "price": "420 024$",
-    "bedrooms": 8,
-    "bathrooms": 64,
+    "details": {
+      "area": "<strong>42m<sup>2</sup><strong>",
+      "floor": 4,
+      "floors": 3,
+      "bedrooms": 8,
+      "bathrooms": 64,
+      "rooms": 72
+    },
     "slideshow": [
-      "./objects/large_flat/object-large01.jpg",
-      "./objects/large_flat/object01.jpg",
-      "./objects/large_flat/object02.jpg",
-      "./objects/large_flat/object03.jpg",
-      "./objects/large_flat/object01.jpg",
-      "./objects/large_flat/object03.jpg",
+      "assets/img/objects/Large flat/object-large01.jpg",
+      "assets/img/objects/Large flat/object01.jpg",
+      "assets/img/objects/Large flat/object02.jpg",
+      "assets/img/objects/Large flat/object03.jpg",
+      "assets/img/objects/Large flat/object01.jpg",
+      "assets/img/objects/Large flat/object03.jpg",
     ],
     "layout": {
-      "layout_img": "./photos/plan-example.jpg",
+      "img": "assets/img/photos/plan_example.jpg",
       "rooms": [
         { 
           "name": "kitchen",
           "area": "<strong>16m<sup>2</sup>",
-          "img": "object03.jpg",
+          "img": "assets/img/objects/Large flat/object03.jpg",
           "x": "22%",
           "y": "20%"
         },
         { "name": "bedroom",
           "area": "<strong>26m<sup>2</sup>",
-          "img": "object03.jpg",
+          "img": "assets/img/objects/Large flat/object03.jpg",
           "x": "51%",
           "y": "20%"
         },
         { "name": "bathroom",
           "area": "<strong>36m<sup>2</sup>",
-          "img": "object03.jpg",
+          "img": "assets/img/objects/Large flat/object03.jpg",
           "x": "53%",
           "y": "70%"
         },
         { "name": "dining",
           "area": "<strong>56m<sup>2</sup>",
-          "img": "object03.jpg",
+          "img": "assets/img/objects/Large flat/object03.jpg",
           "x": "83%",
           "y": "62%"
         }
       ],
     },
     "promo": {
-      "headline": "Neat and modern interiors",
-      "background": "./objects/large_flat/object03.jpg",
+      "headline": "Neat &amp; Modern Interiors",
+      "background": "assets/img/photos/video-bg.jpg",
       "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     },
-    "Features": {
-      "headlines": "Features",
+    "features": {
+      "headline": "Features",
       "subtitle": "lorem  ipsum doler motor ipsums doler motor motor hahalol",
-      "features": [
-        {"icon": "ti-shine", "name": "feature1"}, 
-        {"icon": "ti-shine", "name": "feature2"} 
+      "img": "assets/img/photos/about03.jpg",
+      "feature_list": [
+        {"icon": "ti-shine", "name": "feature1", "description": "lorem ipsum doler motor"}, 
+        {"icon": "ti-shine", "name": "feature2", "description": "lorem ipsum doler motor"} 
       ]
+    },
+    "card": {
+      "area": "<strong>42m<sup>2</sup><strong>",
+      "floor": 3,
+      "price": "420 024$",
+      "price_per_m2": "10000.5714286$"
     }
   }
 }
 
-const populate_layout = (flat_name) => {
+let gallerySliderItems = []
+
+const populate_layout = (rooms) => {
   const layoutElem = document.querySelector('#layout');
-  const layout = data[flat_name].layout;
-  layout.rooms.map( (room) => {
+  console.log("called ");
+  console.log(rooms);
+  rooms.map( (room) => {
     layoutElem.innerHTML += `
       <div class="plan-feature animated" data-animation="fadeInDown" data-x="${room.x}" data-y="${room.y}">
           <span class="plan-pointer" data-items="gallerySliderItems" data-toggle="gallery"><i class="ti ti-plus"></i><span>${room.name}</span></span>
           <div class="plan-popup dark">
-              <img src="assets/img/objects/${flat_name}/${room.img}" alt="" class="popup-image">
+              <img src="${room.img}" alt="" class="popup-image">
               <div class="popup-content">
                   <h5 class="mb-0">${room.name}</h5>
                   <span class="text-muted">Total area: </span>${room.area}</strong>
@@ -80,11 +94,56 @@ const populate_layout = (flat_name) => {
   } ) 
 } 
 
-const populate = (flat_name) => {
-  const flat = data[flat_name];
-  Object.keys(flat).map( key => {
-    document.querySelectorAll(`#${key}`).forEach( elem => {
-      elem.innerHTML = flat[key];
-    } )
+const populate_features = ( features ) => {
+  const container = document.querySelector('#features-container');
+  features.map( (feature, i) => {
+    container.innerHTML += `
+      <div id="features.feature-1" class="feature feature-${i+1}">
+        <i class="icon icon-primary ti ${feature.icon}"></i>
+        <div class="feature-content">
+            <h5 class="mb-0">${feature.name}</h5>
+            <p class="text-muted">${feature.description}</p>
+        </div>
+      </div>
+    `
   } )
+}
+
+const populate_slideshow = slideshow => {
+  slideshow.map( slide => {
+    gallerySliderItems.push({
+      src: slide,
+      w: 1920,
+      h: 1080
+    })
+  })
+}
+
+const pop_map = {
+  "features-feature_list": populate_features,
+  "layout-rooms": populate_layout,
+  "slideshow": populate_slideshow,
+}
+
+const populate_general = (leading, container, d) => {
+  console.log(leading, container, d);
+  // console.log(typeof d)
+  if( typeof d !== "object" ) {
+    if( container.nodeName == "IMG" ) container.src = d;
+    if( container.id == "promo-video" ) container.setAttribute("data-video", d);
+    else container.innerHTML = d;
+    return;
+  }
+
+  Object.keys(d).map( key => {
+    const id = `${leading}${leading != "" ? "-" : ""}${key}`;
+    console.log(key, id);
+    if(id in pop_map) pop_map[id](d[key]);
+    else populate_general(`${id}`, container.querySelector(`#${id}`), d[key]);
+  })
+}
+
+const populate = (flat_name) => {
+  console.log("called");
+  populate_general("", document, data[flat_name]);
 }

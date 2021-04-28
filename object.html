@@ -94,17 +94,17 @@
                 <div class="row align-items-center">
                     <div class="col-lg-8">
                         <h1 class="mb-0">
-                            <span id="flat_name" class="mr-3">Large Flat</span>
+                            <span id="flat_name" class="mr-3"></span>
                             <i class="fa fa-check-circle text-success" data-toggle="tooltip" data-placement="top" title="Best choice!"></i>
                         </h1>
                         <ul class="list-inline lead">
-                            <li id="area" class="list-inline-item"><span class="text-muted">Total area:</span> <strong>42m<sup>2</sup></strong></li>
-                            <li id="rooms" class="list-inline-item"><span class="text-muted">Number of rooms:</span> <strong>5</strong></li>
-                            <li id="floors" class="list-inline-item"><span class="text-muted">Floor:</span> <strong>2</strong></li>
+                            <li class="list-inline-item"><span class="text-muted">Total area:</span> <strong id="area" ></strong> </li>
+                            <li class="list-inline-item"><span class="text-muted">Number of rooms:</span> <strong id="rooms"></strong></li>
+                            <li class="list-inline-item"><span class="text-muted">Floor:</span> <strong id="floors"></strong> </li>
                         </ul>
                     </div>
                     <div class="col-lg-4 text-lg-right">
-                        <span id="price" class="object-price mr-4">$250 000</span>
+                        <span id="price" class="object-price mr-4"></span>
                         <a href="#make-offer" class="btn btn-primary">Make an offer</a>
                     </div>
                 </div>
@@ -132,21 +132,21 @@
                             <div class="col-md-6">
                                 <dl class="row">
                                     <dt class="col-sm-6">Total area:</dt>
-                                    <dd id="area" class="col-sm-6">42m<sup>2</sup></dd>
+                                    <dd id="details-area" class="col-sm-6"></dd>
                                     <dt class="col-sm-6">Floor:</dt>
-                                    <dd id="floor" class="col-sm-6">2</dd>
+                                    <dd id="details-floor" class="col-sm-6"></dd>
                                     <dt class="col-sm-6">Floors in the flat:</dt>
-                                    <dd id="floors" class="col-sm-6">1</dd>
+                                    <dd id="details-floors" class="col-sm-6"></dd>
                                 </dl>
                             </div>
                             <div class="col-md-6">
                                 <dl class="row">
                                     <dt class="col-sm-6">Bedrooms:</dt>
-                                    <dd id="bedrooms" class="col-sm-6">2</dd>
+                                    <dd id="details-bedrooms" class="col-sm-6"></dd>
                                     <dt class="col-sm-6">Bathrooms</dt>
-                                    <dd id="bathrooms" class="col-sm-6">1</dd>
+                                    <dd id="details-bathrooms" class="col-sm-6"></dd>
                                     <dt class="col-sm-6">Total rooms:</dt>
-                                    <dd id="rooms" class="col-sm-6">5</dd>
+                                    <dd id="details-rooms" class="col-sm-6"></dd>
                                 </dl>
                             </div>
                         </div>
@@ -156,7 +156,7 @@
                         <p class="text-center text-sm text-muted mb-0">Click on the room to open gallery...</p>
                         <div id="layout" class="plan-container mb-5">
                             <!-- Plan Image -->
-                            <img src="assets/img/photos/plan_example.jpg" alt="">
+                            <img id="layout-img" alt="">
                             <!-- Plan Feature -->
                             
 
@@ -168,15 +168,15 @@
         </section>
 
         <!-- Section - Video -->
-        <section id="features" class="section section-xl dark bg-dark">
+        <section id="promo" class="section section-xl dark bg-dark">
 
             <!-- BG Image -->
-            <div class="bg-image-holder"><img src="assets/img/photos/video-bg.jpg" alt=""></div>
+            <div class="bg-image-holder"><img id="promo-background" alt=""></div>
             
             <!-- Content -->
             <div class="container text-center">
-                <button class="btn-play animated" data-animation="fadeInUp" data-toggle="video-modal" data-target="#modalVideo" data-video="https://www.youtube.com/embed/uVju5--RqtY"></button>
-                <h2 class="mt-4 mb-0">Neat &amp; Modern Interiors</h2>
+                <button id="promo-video" class="btn-play animated" data-animation="fadeInUp" data-toggle="video-modal" data-target="#modalVideo" ></button>
+                <h2 id="promo-headline" class="mt-4 mb-0"></h2>
             </div>
 
         </section>
@@ -185,30 +185,14 @@
         <section class="section">
 
             <div class="container">
-                <div class="row align-items-center" data-local-scroll>
-                    <div class="col-lg-4 push-lg-2 pr-5">
-                        <h2>Features</h2>
-                        <p class="lead">Mauris dolor orci, sagittis ut varius in, interdum nec sapien. Mauris rutrum lacinia orci nec maximus.</p>
-                        <!-- Feature #1 -->
-                        <div class="feature feature-1">
-                            <i class="icon icon-primary ti ti-cup"></i>
-                            <div class="feature-content">
-                                <h5 class="mb-0">Neat Architecture</h5>
-                                <p class="text-muted">Sed ut faucibus est, eu egestas mi.</p>
-                            </div>
-                        </div>
-                        <!-- Feature #1 -->
-                        <div class="feature feature-1">
-                            <i class="icon icon-primary ti ti-shine"></i>
-                            <div class="feature-content">
-                                <h5 class="mb-0">Close to Nature</h5>
-                                <p class="text-muted">Sed ut faucibus est, eu egestas mi.</p>
-                            </div>
-                        </div>
-                        <a href="#make-offer" class="btn btn-secondary mb-4">Make na offer</a>
+                <div id="features" class="row align-items-center" data-local-scroll>
+                    <div id="features-container" class="col-lg-4 push-lg-2 pr-5">
+                        <h2 id="features-headline"></h2>
+                        <p id="features-subtitle" class="lead"></p>
+                        <!-- <a href="#make-offer" class="btn btn-secondary mb-4">Make na offer</a> -->
                     </div>
                     <div class="col-lg-4 push-lg-2">
-                        <img class="rounded shadow animated" src="assets/img/photos/about03.jpg" alt="" data-animation="fadeIn">
+                        <img id="features-img" class="rounded shadow animated" alt="" data-animation="fadeIn">
                     </div>
                 </div>
             </div>
@@ -225,25 +209,25 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 push-lg-2">
                         <!-- Object - Vertical -->
-                        <div class="object-box">
+                        <div id="card" class="object-box">
                             <div class="object-image">
                                 <img src="assets/img/objects/object01_lg.jpg" alt="">
                             </div>
                             <div class="object-content">
                                 <h5 class="object-title">Large Flat</h5>
                                 <ul class="object-details list-unstyled">
-                                    <li><span class="text-muted">Total area:</span> 92m<sup>2</sup></li>
-                                    <li><span class="text-muted">Bedrooms:</span> 2</li>
-                                    <li><span class="text-muted">Floor:</span> 1</li>
+                                    <li><span class="text-muted">Total area:</span> <span id="card-area"></span></li>
+                                    <li><span class="text-muted">Bedrooms:</span> <span id="card-bedrooms"></span></li>
+                                    <li><span class="text-muted">Floor:</span> <span id="card-floor"></span></li>
                                 </ul>
                                 <div class="row">
                                     <div class="col-6">
                                         <strong class="text-muted">Price:</strong>
-                                        <span class="object-price text-primary text-lg">$422 200</span>
+                                        <span id="card-price" class="object-price text-primary text-lg"></span>
                                     </div>
                                     <div class="col-6">
                                         <strong class="text-muted">Price per m<sup>2</sup>:</strong>
-                                        <span class="object-price">$3 200</span>
+                                        <span id="card-price_per_m2" class="object-price"></span>
                                     </div>
                                 </div>
                             </div> 
@@ -405,33 +389,33 @@
 
 <!-- JS Gallery -->
 <script>
-    var gallerySliderItems = [
-        {
-            src: 'assets/img/photos/slider01.jpg',
-            w: 1920,
-            h: 1080
-        },
-        {
-            src: 'assets/img/photos/slider02.jpg',
-            w: 1920,
-            h: 1080
-        },
-        {
-            src: 'assets/img/photos/slider03.jpg',
-            w: 1920,
-            h: 1080
-        },
-        {
-            src: 'assets/img/photos/slider04.jpg',
-            w: 1920,
-            h: 1080
-        },
-        {
-            src: 'assets/img/photos/slider05.jpg',
-            w: 1920,
-            h: 1080
-        }
-    ];
+    // var gallerySliderItems = [
+    //     {
+    //         src: 'assets/img/photos/slider01.jpg',
+    //         w: 1920,
+    //         h: 1080
+    //     },
+    //     {
+    //         src: 'assets/img/photos/slider02.jpg',
+    //         w: 1920,
+    //         h: 1080
+    //     },
+    //     {
+    //         src: 'assets/img/photos/slider03.jpg',
+    //         w: 1920,
+    //         h: 1080
+    //     },
+    //     {
+    //         src: 'assets/img/photos/slider04.jpg',
+    //         w: 1920,
+    //         h: 1080
+    //     },
+    //     {
+    //         src: 'assets/img/photos/slider05.jpg',
+    //         w: 1920,
+    //         h: 1080
+    //     }
+    // ];
 
     var galleryCarouselItems = [
         {
@@ -465,7 +449,7 @@
             h: 750
         }
     ];
-    populate_layout("Large flat");
+    populate("Large flat");
 </script>
 
 <!-- JS Google Map -->
