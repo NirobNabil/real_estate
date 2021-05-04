@@ -4,6 +4,16 @@ const navbar_data = {
   "address_short": "Lalbagh, Dhaka-1211"
 }
 
+const home_data = {
+  "slideshow": [
+    {"name": "Neat architectural design", "img": "./assets/img/slideshow/1.png"},
+    {"name": "Neat architectural design2", "img": "assets/img/slideshow/2.png"},
+    {"name": "Neat architectural design3", "img": "assets/img/slideshow/3.png"},
+    {"name": "Neat architectural design4", "img": "assets/img/slideshow/4.png"},
+    {"name": "Neat architectural design5", "img": "assets/img/slideshow/5.png"},
+  ]
+}
+
 const data = {
   "flat-a": {
     "flat_name": "Flat A",
@@ -860,6 +870,25 @@ const populate_home = () => {
         </div> 
         <a href="flats/${key}.html" class="object-btn btn btn-secondary"><span class="hidden-xs-down">View</span> Details</a>
       </div>
+    `
+  } )
+
+  const slideshow_container = document.querySelector('#slideshow');
+  const slideshow_nav_container = document.querySelector('#slideshow-nav');
+
+  home_data["slideshow"].map( slide => {
+    slideshow_container.innerHTML += `
+      <div class="slide">
+        <div class="slide-bg bg-image-holder bg-image-fixed">
+            <img src="${slide.img}" alt="">
+        </div>
+        <div class="slide-content container text-center">
+            <h1>${slide.name}</h1>
+        </div>
+      </div>
+    `
+    slideshow_nav_container.innerHTML += `
+      <div class="slide"><img src="${slide.img}" alt=""></div>
     `
   } )
 }

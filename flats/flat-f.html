@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="../assets//plugins/font-awesome/css/font-awesome.min.css" />
 
     <!-- CSS Theme -->
-    <link id="theme" rel="stylesheet" href="../assets//css/themes/theme-blue.min.css" />
+    <link id="theme" rel="stylesheet" href="../assets//css/themes/theme-teal.min.css" />
 
 </head>
 
@@ -105,8 +105,6 @@
                                         id="area"></strong> </li>
                                 <li class="list-inline-item"><span class="text-muted">Number of rooms:</span> <strong
                                         id="rooms"></strong></li>
-                                <li class="list-inline-item"><span class="text-muted">Floor:</span> <strong
-                                        id="floor"></strong> </li>
                             </ul>
                         </div>
                         <div class="col-lg-4 text-lg-right">
@@ -139,10 +137,6 @@
                                     <dl class="row">
                                         <dt class="col-sm-6">Total area:</dt>
                                         <dd id="details-area" class="col-sm-6"></dd>
-                                        <dt class="col-sm-6">Floor:</dt>
-                                        <dd id="details-floor" class="col-sm-6"></dd>
-                                        <dt class="col-sm-6">Floors in the flat:</dt>
-                                        <dd id="details-floors" class="col-sm-6"></dd>
                                     </dl>
                                 </div>
                                 <div class="col-md-6">
@@ -158,8 +152,8 @@
                             </div>
                             <hr class="hr-sm">
                             <!-- Plan -->
-                            <h4 class="text-center mb-0 pt-5">First floor</h4>
-                            <p class="text-center text-sm text-muted mb-0">Click on the room to open gallery...</p>
+                            <h4 class="text-center mb-0 pt-5">Layout</h4>
+                            <!-- <p class="text-center text-sm text-muted mb-0">Click on the room to open gallery...</p> -->
                             <div id="layout" class="plan-container mb-5">
                                 <!-- Plan Image -->
                                 <img id="layout-img" alt="">
@@ -218,16 +212,15 @@
                             <!-- Object - Vertical -->
                             <div id="card" class="object-box">
                                 <div class="object-image">
-                                    <img src="../assets//img/objects/object01_lg.jpg" alt="">
+                                    <img id="card-img" src="../assets//img/objects/object01_lg.jpg" alt="">
                                 </div>
                                 <div class="object-content">
-                                    <h5 class="object-title">Large Flat</h5>
+                                    <h5 id="card-name" class="object-title">Large Flat</h5>
                                     <ul class="object-details list-unstyled">
                                         <li><span class="text-muted">Total area:</span> <span id="card-area"></span>
                                         </li>
                                         <li><span class="text-muted">Bedrooms:</span> <span id="card-bedrooms"></span>
                                         </li>
-                                        <li><span class="text-muted">Floor:</span> <span id="card-floor"></span></li>
                                     </ul>
                                     <div class="row">
                                         <div class="col-6">
