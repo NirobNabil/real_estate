@@ -4,13 +4,22 @@ const navbar_data = {
   "address_short": "Lalbagh, Dhaka-1211"
 }
 
+const mother_video_link = "https://www.youtube.com/embed/dQw4w9WgXcQ"; 
+
 const home_data = {
   "slideshow": [
-    {"name": "Neat architectural design", "img": "./assets/img/slideshow/1.png"},
+    {"name": "Neat architectural design", "img": "assets/img/slideshow/1.png"},
     {"name": "Neat architectural design2", "img": "assets/img/slideshow/2.png"},
     {"name": "Neat architectural design3", "img": "assets/img/slideshow/3.png"},
     {"name": "Neat architectural design4", "img": "assets/img/slideshow/4.png"},
     {"name": "Neat architectural design5", "img": "assets/img/slideshow/5.png"},
+  ],
+  "gallery": [
+    {"img": "assets/img/slideshow/1.png"},
+    {"img": "assets/img/slideshow/2.png"},
+    {"img": "assets/img/slideshow/3.png"},
+    {"img": "assets/img/slideshow/4.png"},
+    {"img": "assets/img/slideshow/5.png"},    
   ]
 }
 
@@ -19,7 +28,7 @@ const data = {
     "flat_name": "Flat A",
     "area": "<strong>1159m<sup>2</sup><strong>",
     "rooms": 3,
-    "price": "55 63 200BDT",
+    "price": "BDT 55,63,200",
     "landing_img": "../assets/img/flats/A/Unit-A-2.png",
     "details": {
       "area": "<strong>1159m<sup>2</sup><strong>",
@@ -66,16 +75,17 @@ const data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/A/Unit-A-2.png",
-      "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "video": mother_video_link,
     },
     "features": {
-      // "headline": "Features",
-      // "subtitle": "lorem  ipsum doler motor ipsums doler motor motor hahalol",
-      // "img": "../assets/img/photos/about03.jpg",
-      // "feature_list": [
-      //   {"icon": "ti-shine", "name": "feature1", "description": "lorem ipsum doler motor"}, 
-      //   {"icon": "ti-shine", "name": "feature2", "description": "lorem ipsum doler motor"} 
-      // ]
+      "headline": "Features",
+      "subtitle": "",
+      "img": "../assets/img/photos/about03.jpg",
+      "feature_list": [
+        {"icon": "ti-shine", "name": "Mosque"}, 
+        {"icon": "ti-shine", "name": "Gymnasium",},
+        {"icon": "ti-shine", "name": "Convention hall",},
+      ]
     },
     "card": {
       "name": "Flat A",
@@ -91,7 +101,7 @@ const data = {
     "flat_name": "Flat B",
     "area": "<strong>1136m<sup>2</sup><strong>",
     "rooms": 3,
-    "price": "54 52 800BDT",
+    "price": "BDT5452800",
     "floor": floor,
     "landing_img": "../assets/img/flats/B/Unit-B-2.png",
     "details": {
@@ -149,13 +159,14 @@ const data = {
       "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     },
     "features": {
-      // "headline": "Features",
-      // "subtitle": "lorem  ipsum doler motor ipsums doler motor motor hahalol",
-      // "img": "../assets/img/photos/about03.jpg",
-      // "feature_list": [
-      //   {"icon": "ti-shine", "name": "feature1", "description": "lorem ipsum doler motor"}, 
-      //   {"icon": "ti-shine", "name": "feature2", "description": "lorem ipsum doler motor"} 
-      // ]
+      "headline": "Features",
+      "subtitle": "",
+      "img": "../assets/img/photos/about03.jpg",
+      "feature_list": [
+        {"icon": "ti-shine", "name": "Mosque"}, 
+        {"icon": "ti-shine", "name": "Gymnasium",},
+        {"icon": "ti-shine", "name": "Convention hall",},
+      ]
     },
     "card": {
       "name": "Flat A",
@@ -163,7 +174,7 @@ const data = {
       "img": "../assets/img/flats/B/Unit-B-2.png",
       "area": "<strong>1159m<sup>2</sup><strong>",
       "floor": floor,
-      "price": "55 63 200BDT",
+      "price": "BDT5563200",
       "price_per_m2": "4800BDT"
     }
   },
@@ -171,7 +182,7 @@ const data = {
     "flat_name": "Flat C",
     "area": "<strong>1034m<sup>2</sup><strong>",
     "rooms": 3,
-    "price": "49 63 200BDT",
+    "price": "BDT4963200",
     "floor": floor,
     "landing_img": "../assets/img/flats/C/Unit-C-2.png",
     "details": {
@@ -224,13 +235,14 @@ const data = {
       "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     },
     "features": {
-      // "headline": "Features",
-      // "subtitle": "lorem  ipsum doler motor ipsums doler motor motor hahalol",
-      // "img": "../assets/img/photos/about03.jpg",
-      // "feature_list": [
-      //   {"icon": "ti-shine", "name": "feature1", "description": "lorem ipsum doler motor"}, 
-      //   {"icon": "ti-shine", "name": "feature2", "description": "lorem ipsum doler motor"} 
-      // ]
+      "headline": "Features",
+      "subtitle": "",
+      "img": "../assets/img/photos/about03.jpg",
+      "feature_list": [
+        {"icon": "ti-shine", "name": "Mosque"}, 
+        {"icon": "ti-shine", "name": "Gymnasium",},
+        {"icon": "ti-shine", "name": "Convention hall",},
+      ]
     },
     "card": {
       "name": "Flat C",
@@ -238,7 +250,7 @@ const data = {
       "img": "../assets/img/flats/C/Unit-C-2.png",
       "area": "<strong>1034m<sup>2</sup><strong>",
       "floor": floor,
-      "price": "4963200BDT",
+      "price": "BDT4963200",
       "price_per_m2": "4800BDT"
     }
   },
@@ -246,7 +258,7 @@ const data = {
     "flat_name": "Flat D",
     "area": "<strong>1048m<sup>2</sup><strong>",
     "rooms": 3,
-    "price": "50 30 400BDT",
+    "price": "BDT5030400",
     "floor": floor,
     "landing_img": "../assets/img/flats/D/Unit-D-2.png",
     "details": {
@@ -298,13 +310,14 @@ const data = {
       "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     },
     "features": {
-      // "headline": "Features",
-      // "subtitle": "lorem  ipsum doler motor ipsums doler motor motor hahalol",
-      // "img": "../assets/img/photos/about03.jpg",
-      // "feature_list": [
-      //   {"icon": "ti-shine", "name": "feature1", "description": "lorem ipsum doler motor"}, 
-      //   {"icon": "ti-shine", "name": "feature2", "description": "lorem ipsum doler motor"} 
-      // ]
+      "headline": "Features",
+      "subtitle": "",
+      "img": "../assets/img/photos/about03.jpg",
+      "feature_list": [
+        {"icon": "ti-shine", "name": "Mosque"}, 
+        {"icon": "ti-shine", "name": "Gymnasium",},
+        {"icon": "ti-shine", "name": "Convention hall",},
+      ]
     },
     "card": {
       "name": "Flat D",
@@ -312,7 +325,7 @@ const data = {
       "img": "../assets/img/flats/D/Unit-D-2.png",
       "area": "<strong>1048m<sup>2</sup><strong>",
       "floor": floor,
-      "price": "5030400BDT",
+      "price": "BDT5030400",
       "price_per_m2": "4800BDT"
     }
   },
@@ -372,13 +385,14 @@ const data = {
       "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     },
     "features": {
-      // "headline": "Features",
-      // "subtitle": "lorem  ipsum doler motor ipsums doler motor motor hahalol",
-      // "img": "../assets/img/photos/about03.jpg",
-      // "feature_list": [
-      //   {"icon": "ti-shine", "name": "feature1", "description": "lorem ipsum doler motor"}, 
-      //   {"icon": "ti-shine", "name": "feature2", "description": "lorem ipsum doler motor"} 
-      // ]
+      "headline": "Features",
+      "subtitle": "",
+      "img": "../assets/img/photos/about03.jpg",
+      "feature_list": [
+        {"icon": "ti-shine", "name": "Mosque"}, 
+        {"icon": "ti-shine", "name": "Gymnasium",},
+        {"icon": "ti-shine", "name": "Convention hall",},
+      ]
     },
     "card": {
       "name": "Flat E",
@@ -446,13 +460,14 @@ const data = {
       "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     },
     "features": {
-      // "headline": "Features",
-      // "subtitle": "lorem  ipsum doler motor ipsums doler motor motor hahalol",
-      // "img": "../assets/img/photos/about03.jpg",
-      // "feature_list": [
-      //   {"icon": "ti-shine", "name": "feature1", "description": "lorem ipsum doler motor"}, 
-      //   {"icon": "ti-shine", "name": "feature2", "description": "lorem ipsum doler motor"} 
-      // ]
+      "headline": "Features",
+      "subtitle": "",
+      "img": "../assets/img/photos/about03.jpg",
+      "feature_list": [
+        {"icon": "ti-shine", "name": "Mosque"}, 
+        {"icon": "ti-shine", "name": "Gymnasium",},
+        {"icon": "ti-shine", "name": "Convention hall",},
+      ]
     },
     "card": {
       "name": "Flat F",
@@ -520,13 +535,14 @@ const data = {
       "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     },
     "features": {
-      // "headline": "Features",
-      // "subtitle": "lorem  ipsum doler motor ipsums doler motor motor hahalol",
-      // "img": "../assets/img/photos/about03.jpg",
-      // "feature_list": [
-      //   {"icon": "ti-shine", "name": "feature1", "description": "lorem ipsum doler motor"}, 
-      //   {"icon": "ti-shine", "name": "feature2", "description": "lorem ipsum doler motor"} 
-      // ]
+      "headline": "Features",
+      "subtitle": "",
+      "img": "../assets/img/photos/about03.jpg",
+      "feature_list": [
+        {"icon": "ti-shine", "name": "Mosque"}, 
+        {"icon": "ti-shine", "name": "Gymnasium",},
+        {"icon": "ti-shine", "name": "Convention hall",},
+      ]
     },
     "card": {
       "name": "Flat G",
@@ -589,13 +605,14 @@ const data = {
       "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     },
     "features": {
-      // "headline": "Features",
-      // "subtitle": "lorem  ipsum doler motor ipsums doler motor motor hahalol",
-      // "img": "../assets/img/photos/about03.jpg",
-      // "feature_list": [
-      //   {"icon": "ti-shine", "name": "feature1", "description": "lorem ipsum doler motor"}, 
-      //   {"icon": "ti-shine", "name": "feature2", "description": "lorem ipsum doler motor"} 
-      // ]
+      "headline": "Features",
+      "subtitle": "",
+      "img": "../assets/img/photos/about03.jpg",
+      "feature_list": [
+        {"icon": "ti-shine", "name": "Mosque"}, 
+        {"icon": "ti-shine", "name": "Gymnasium",},
+        {"icon": "ti-shine", "name": "Convention hall",},
+      ]
     },
     "card": {
       "name": "Flat H",
@@ -658,13 +675,14 @@ const data = {
       "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     },
     "features": {
-      // "headline": "Features",
-      // "subtitle": "lorem  ipsum doler motor ipsums doler motor motor hahalol",
-      // "img": "../assets/img/photos/about03.jpg",
-      // "feature_list": [
-      //   {"icon": "ti-shine", "name": "feature1", "description": "lorem ipsum doler motor"}, 
-      //   {"icon": "ti-shine", "name": "feature2", "description": "lorem ipsum doler motor"} 
-      // ]
+      "headline": "Features",
+      "subtitle": "",
+      "img": "../assets/img/photos/about03.jpg",
+      "feature_list": [
+        {"icon": "ti-shine", "name": "Mosque"}, 
+        {"icon": "ti-shine", "name": "Gymnasium",},
+        {"icon": "ti-shine", "name": "Convention hall",},
+      ]
     },
     "card": {
       "name": "Flat I",
@@ -727,13 +745,14 @@ const data = {
       "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     },
     "features": {
-      // "headline": "Features",
-      // "subtitle": "lorem  ipsum doler motor ipsums doler motor motor hahalol",
-      // "img": "../assets/img/photos/about03.jpg",
-      // "feature_list": [
-      //   {"icon": "ti-shine", "name": "feature1", "description": "lorem ipsum doler motor"}, 
-      //   {"icon": "ti-shine", "name": "feature2", "description": "lorem ipsum doler motor"} 
-      // ]
+      "headline": "Features",
+      "subtitle": "",
+      "img": "../assets/img/photos/about03.jpg",
+      "feature_list": [
+        {"icon": "ti-shine", "name": "Mosque"}, 
+        {"icon": "ti-shine", "name": "Gymnasium",},
+        {"icon": "ti-shine", "name": "Convention hall",},
+      ]
     },
     "card": {
       "name": "Flat J",
@@ -773,11 +792,10 @@ const populate_features = ( features ) => {
   const container = document.querySelector('#features-container');
   features.map( (feature, i) => {
     container.innerHTML += `
-      <div id="features.feature-1" class="feature feature-${i+1}">
+      <div class="feature feature-${i+1}">
         <i class="icon icon-primary ti ${feature.icon}"></i>
         <div class="feature-content">
             <h5 class="mb-0">${feature.name}</h5>
-            <p class="text-muted">${feature.description}</p>
         </div>
       </div>
     `
@@ -825,6 +843,9 @@ const populate = (flat_name) => {
   document.querySelector('#address-short').innerHTML = navbar_data.address_short;
   populate_general("", document, data[flat_name]);
 }
+
+
+var galleryCarouselItems = []
 
 const populate_home = () => {
 
@@ -876,7 +897,7 @@ const populate_home = () => {
   const slideshow_container = document.querySelector('#slideshow');
   const slideshow_nav_container = document.querySelector('#slideshow-nav');
 
-  home_data["slideshow"].map( slide => {
+  home_data["slideshow"].map( (slide, i) => {
     slideshow_container.innerHTML += `
       <div class="slide">
         <div class="slide-bg bg-image-holder bg-image-fixed">
@@ -886,9 +907,29 @@ const populate_home = () => {
             <h1>${slide.name}</h1>
         </div>
       </div>
-    `
+    `;
     slideshow_nav_container.innerHTML += `
       <div class="slide"><img src="${slide.img}" alt=""></div>
-    `
+    `;
+
   } )
+
+
+  const carousel_container = document.querySelector('#gallery-carousel');
+  home_data["gallery"].map( (slide, i) => {
+    carousel_container.innerHTML += `
+      <img src="${slide.img}" alt=""/>
+    `;
+
+    galleryCarouselItems.push(
+      {
+        src: slide.img,
+        width: 1100,
+        height: 750
+      }
+    )
+  } )
+
+  const about_video = document.querySelector("#about-video");
+  about_video.dataset.video = mother_video_link;
 }
