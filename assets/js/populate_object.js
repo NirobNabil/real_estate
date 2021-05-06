@@ -786,7 +786,7 @@ const populate_layout = (rooms) => {
               <img src="${room.img}" alt="" class="popup-image">
               <div class="popup-content">
                   <h5 class="mb-0">${room.name}</h5>
-                  <span class="text-muted">Total area: </span>${room.area}</strong>
+                  <!-- <span class="text-muted">Total area: </span>${room.area}</strong> -->
               </div>
           </div>
       </div>
@@ -869,18 +869,19 @@ const populate_home = () => {
   const list_container = document.querySelector('#flats-list_view');
   
   Object.keys(data).map( key => {
+    // if(key == "flat-j") return;
     grid_container.innerHTML += `
       <div class="col-lg-3 col-6">
         <!-- Object - Vertical -->
         <div class="object object-vertical">
-            <div class="object-image">
+            <div class="object-image" style="min-height:250px; display:flex; align-items:center">
                 <a class="link-inherit" href="flats/${key}.html"><img src="${data[key].landing_img.split('/').splice(1).join('/')}" alt=""></a>
             </div>
             <div class="object-content">
                 <h5 class="object-title"><a class="link-inherit" href="flats/${key}.html">${data[key].flat_name}</a></h5>
                 <ul class="object-details list-unstyled">
                     <li><span class="text-muted">Total area:</span> ${data[key].area}</li>
-                    <li><span class="text-muted">Bedrooms:</span> ${data[key].bedrooms}</li>
+                    <li><span class="text-muted">Bedrooms:</span> ${data[key].details.bedrooms}</li>
                 </ul>
                 <span class="object-price">${data[key].price}</span>
                 <a href="flats/${key}.html" class="object-btn btn btn-secondary"><span class="hidden-xs-down">View</span> Details</a>
@@ -897,7 +898,7 @@ const populate_home = () => {
             <h5 class="object-title"><a class="link-inherit" href="flats/${key}.html">${data[key].flat_name}</a></h5>
                 <ul class="object-details list-unstyled">
                     <li><span class="text-muted">Total area:</span> ${data[key].area}</li>
-                    <li><span class="text-muted">Bedrooms:</span> ${data[key].bedrooms}</li>
+                    <li><span class="text-muted">Bedrooms:</span> ${data[key].details.bedrooms}</li>
                 </ul>
                 <span class="object-price">${data[key].price}</span>
         </div> 
