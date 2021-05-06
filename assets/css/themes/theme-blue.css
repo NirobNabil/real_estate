@@ -1423,7 +1423,7 @@ img {
 
 .object .object-price {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.6em;
+  font-size: 1.4em;
   display: block;
   font-weight: 400;
   color: #3D64CC;
@@ -1572,6 +1572,7 @@ img {
 }
 
 .object-box .object-content .object-price {
+  font-size: 1.2rem;
   line-height: 1.2;
 }
 

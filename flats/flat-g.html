@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="../assets//plugins/font-awesome/css/font-awesome.min.css" />
 
     <!-- CSS Theme -->
-    <link id="theme" rel="stylesheet" href="../assets//css/themes/theme-teal.min.css" />
+    <link id="theme" rel="stylesheet" href="../assets//css/themes/theme-blue.css" />
 
 </head>
 
@@ -60,9 +60,9 @@
 
             <!-- Module - Objects -->
             <div class="module module-object" data-toggle="panel-objects">
-                <img class="object-image"  alt="">
+                <!-- <img class="object-image" src="assets/img/home/thumbnail.jpg" alt=""> -->
                 <span id="address-short" class="object-name"></span>
-                <!-- <span class="object-indicator"><i class="ti ti-menu"></i></span> -->
+                <span class="object-indicator"><i class="ti ti-menu"></i></span>
             </div>
             
             <!-- Module - Language -->
@@ -94,7 +94,7 @@
                 <!-- Content -->
                 <div class="container object-single" data-local-scroll>
                     <div class="row align-items-center">
-                        <div class="col-lg-8">
+                        <div class="col-lg-7">
                             <h1 class="mb-0">
                                 <span id="flat_name" class="mr-3"></span>
                                 <i class="fa fa-check-circle text-success" data-toggle="tooltip" data-placement="top"
@@ -107,7 +107,7 @@
                                         id="rooms"></strong></li>
                             </ul>
                         </div>
-                        <div class="col-lg-4 text-lg-right">
+                        <div class="col-lg-5 text-lg-right">
                             <span id="price" class="object-price mr-4"></span>
                             <a href="#make-offer" class="btn btn-primary">Make an offer</a>
                         </div>
@@ -145,8 +145,6 @@
                                         <dd id="details-bedrooms" class="col-sm-6"></dd>
                                         <dt class="col-sm-6">Bathrooms</dt>
                                         <dd id="details-bathrooms" class="col-sm-6"></dd>
-                                        <dt class="col-sm-6">Total rooms:</dt>
-                                        <dd id="details-rooms" class="col-sm-6"></dd>
                                     </dl>
                                 </div>
                             </div>
@@ -277,28 +275,33 @@
 
         <!-- Footer -->
         <footer id="footer" class="footer-fixed bg-dark dark">
-
+        
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-left mb-5 mb-md-0">
-                        <a href="index.html"><img src="../assets//img/logo-light.svg" width="120" alt=""></a>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-3 text-center text-md-left mb-5 mb-md-0">
+                        <a href="../index.html"><img src="../assets/img/logo-light.svg" width="120" alt=""></a>
                     </div>
-                    <div class="col-md-6 text-center text-md-right">
-                        <ul class="nav nav-footer mr-4">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="documentation.html" target="_blank">Documentation</a></li>
-                            <li><a href="https://themeforest.net/user/suelo?ref=suelo" target="_blank">More</a></li>
-                        </ul>
-                        <ul class="nav nav-footer">
-                            <li><a href="#">PL</a></li>
-                            <li><a class="active" href="#">EN</a></li>
-                        </ul>
+                    <div class="content col-xl-4 col-md-5">
+                        <address>
+                            Lilly Builders<br>
+                            60/1 R.N.D road,<br>
+                            Lalbagh ,Dhaka-1211<br>
+                        </address>
+                        <p class="lead">
+                            E: <a class="link-inherit" href="mailto:lilybuilders.bd@gmail.com">lilybuilders.bd@gmail.com</a><br>
+                            P: +8801872796650
+                        </p>
+                        <a class="facebook_link" href="#" class="icon icon-circle icon-sm icon-facebook"><i
+                                class="fa fa-facebook"></i></a>
+                        <a class="google_link" href="#" class="icon icon-circle icon-sm icon-google"><i
+                                class="fa fa-google"></i></a>
+                        <a class="instagram_link" href="#" class="icon icon-circle icon-sm icon-instagram"><i
+                                class="fa fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
-
+        
         </footer>
-        <!-- Footer / End -->
 
         <!-- Body Overlay -->
         <div id="body-overlay"></div>
@@ -307,71 +310,36 @@
 
     <!-- Panel - Objects -->
     <nav id="panel-objects">
-
+    
         <div class="panel-objects-container container dark">
-
+    
             <h3 class="text-center mb-5">Pick a location:</h3>
-
+    
             <div class="panel-objects-list row">
                 <div class="col-md-4 col-sm-6">
                     <!-- Panel Objects Item -->
                     <div class="panel-objects-item">
-                        <a href="index.html" class="panel-objects-item-image"><img
-                                src="../assets//img/objects/panel-object01.jpg" alt=""></a>
+                        <a href="../index.html" class="panel-objects-item-image"><img src="../assets/img/home/thumbnail.jpg"
+                                alt=""></a>
                         <div class="panel-objects-item-content">
-                            <a href="index.html" class="link-reset">
-                                <h5 class="mb-0">Wroclaw, Zlota 22</h5>
+                            <a href="../index.html" class="link-reset">
+                                <h5 class="mb-0">60/1 R.N.D road , Lalbagh ,Dhaka-1211</h5>
                                 <ul class="list-inline mb-0">
-                                    <li class="list-inline-item"><span class="text-muted">Total area:</span> 22m</li>
-                                    <li class="list-inline-item"><span class="text-muted">Number of flats:</span> 32
-                                    </li>
-                                </ul>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <!-- Panel Objects Item -->
-                    <div class="panel-objects-item">
-                        <a href="index.html" class="panel-objects-item-image"><img
-                                src="../assets//img/objects/panel-object02.jpg" alt=""></a>
-                        <div class="panel-objects-item-content">
-                            <a href="index.html" class="link-reset">
-                                <h5 class="mb-0">Warsaw, Zielona 6</h5>
-                                <ul class="list-inline mb-0">
-                                    <li class="list-inline-item"><span class="text-muted">Total area:</span> 22m</li>
-                                    <li class="list-inline-item"><span class="text-muted">Number of flats:</span> 32
-                                    </li>
-                                </ul>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <!-- Panel Objects Item -->
-                    <div class="panel-objects-item">
-                        <a href="index.html" class="panel-objects-item-image"><img
-                                src="../assets//img/objects/panel-object03.jpg" alt=""></a>
-                        <div class="panel-objects-item-content">
-                            <a href="index.html" class="link-reset">
-                                <h5 class="mb-0">Cracow, Jageillonska 51</h5>
-                                <ul class="list-inline mb-0">
-                                    <li class="list-inline-item"><span class="text-muted">Total area:</span> 22m</li>
-                                    <li class="list-inline-item"><span class="text-muted">Number of flats:</span> 32
-                                    </li>
+                                    <!-- <li class="list-inline-item"><span class="text-muted">Total area:</span> 22m</li>
+                                    <li class="list-inline-item"><span class="text-muted">Number of flats:</span> 32</li> -->
                                 </ul>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-
+    
             <!-- Close -->
             <button class="panel-objects-close close" data-toggle="panel-objects"></button>
-
+    
         </div>
-
     </nav>
+
 
     <!-- Video Modal / Demo -->
     <div class="modal modal-video fade" id="modalVideo" role="dialog">
