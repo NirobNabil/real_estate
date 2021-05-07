@@ -1365,15 +1365,28 @@ img {
   /* padding-top: 0.75rem; */
 }
 
-.feature-3 {
+/* .feature-3 {
   min-height: 7rem;
-}
+} */
 
 .feature-3 .feature-content {
   padding-left: 55px;
 }
 
 .feature-3 .icon {
+  float: left;
+  /* padding-top: 0.75rem; */
+}
+
+.feature-4 {
+  min-height: 7rem;
+}
+
+.feature-4 .feature-content {
+  padding-left: 55px;
+}
+
+.feature-4 .icon {
   float: left;
   /* padding-top: 0.75rem; */
 }

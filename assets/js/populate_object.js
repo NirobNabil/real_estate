@@ -1,4 +1,5 @@
 const floor = 1;
+const price_per_sq = 4800
 
 const navbar_data = {
   "address_short": "Lalbagh, Dhaka-1211"
@@ -29,12 +30,12 @@ const home_data = {
   ],
 }
 
-const data = {
+let data = {
   "flat-a": {
     "flat_name": "Flat A",
     "area": "<strong>1159ft<sup>2</sup><strong>",
     "rooms": 3,
-    "price": "BDT 55,63,200",
+    "price": "BDT ,200",
     "landing_img": "../assets/img/flats/A/Unit-A-2.png",
     "details": {
       "area": "<strong>1159ft<sup>2</sup><strong>",
@@ -91,6 +92,7 @@ const data = {
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
         {"icon": "ti-shine", "name": "Convention hall",},
+        {"icon": "ti-shine", "name": "Playground space"},
       ]
     },
     "card": {
@@ -162,7 +164,7 @@ const data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/B/Unit-B-2.png",
-      "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "video": "mother_video_link",
     },
     "features": {
       "headline": "Features",
@@ -172,6 +174,7 @@ const data = {
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
         {"icon": "ti-shine", "name": "Convention hall",},
+        {"icon": "ti-shine", "name": "Playground space"},
       ]
     },
     "card": {
@@ -238,7 +241,7 @@ const data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/C/Unit-C-2.png",
-      "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "video": "mother_video_link",
     },
     "features": {
       "headline": "Features",
@@ -248,6 +251,7 @@ const data = {
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
         {"icon": "ti-shine", "name": "Convention hall",},
+        {"icon": "ti-shine", "name": "Playground space"},
       ]
     },
     "card": {
@@ -313,7 +317,7 @@ const data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/D/Unit-D-2.png",
-      "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "video": "mother_video_link",
     },
     "features": {
       "headline": "Features",
@@ -323,6 +327,7 @@ const data = {
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
         {"icon": "ti-shine", "name": "Convention hall",},
+        {"icon": "ti-shine", "name": "Playground space"},
       ]
     },
     "card": {
@@ -388,7 +393,7 @@ const data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/E/Unit-E-2.png",
-      "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "video": "mother_video_link",
     },
     "features": {
       "headline": "Features",
@@ -398,6 +403,7 @@ const data = {
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
         {"icon": "ti-shine", "name": "Convention hall",},
+        {"icon": "ti-shine", "name": "Playground space"},
       ]
     },
     "card": {
@@ -463,7 +469,7 @@ const data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/F/Unit-F-2.png",
-      "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "video": "mother_video_link",
     },
     "features": {
       "headline": "Features",
@@ -473,6 +479,7 @@ const data = {
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
         {"icon": "ti-shine", "name": "Convention hall",},
+        {"icon": "ti-shine", "name": "Playground space"},
       ]
     },
     "card": {
@@ -538,7 +545,7 @@ const data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/G/Unit-G-2.png",
-      "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "video": "mother_video_link",
     },
     "features": {
       "headline": "Features",
@@ -548,6 +555,7 @@ const data = {
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
         {"icon": "ti-shine", "name": "Convention hall",},
+        {"icon": "ti-shine", "name": "Playground space"},
       ]
     },
     "card": {
@@ -608,7 +616,7 @@ const data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/H/Unit-H-2.png",
-      "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "video": "mother_video_link",
     },
     "features": {
       "headline": "Features",
@@ -618,6 +626,7 @@ const data = {
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
         {"icon": "ti-shine", "name": "Convention hall",},
+        {"icon": "ti-shine", "name": "Playground space"}
       ]
     },
     "card": {
@@ -678,7 +687,7 @@ const data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/I/Unit-I-2.png",
-      "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "video": "mother_video_link",
     },
     "features": {
       "headline": "Features",
@@ -688,6 +697,7 @@ const data = {
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
         {"icon": "ti-shine", "name": "Convention hall",},
+        {"icon": "ti-shine", "name": "Playground space"},
       ]
     },
     "card": {
@@ -748,7 +758,7 @@ const data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/J/Unit-J-2.png",
-      "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "video": "mother_video_link",
     },
     "features": {
       "headline": "Features",
@@ -758,6 +768,7 @@ const data = {
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
         {"icon": "ti-shine", "name": "Convention hall",},
+        {"icon": "ti-shine", "name": "Playground space"},
       ]
     },
     "card": {
@@ -844,7 +855,20 @@ const populate_general = (leading, container, d) => {
   })
 }
 
+newData = {}
+Object.keys(data).map( key => {
+  newData[key] = data[key];
+  price_string = String(price_per_sq * parseInt(data[key]["area"].split('>')[1].split('f')[0]));
+  price_string = price_string.split('')
+  price_string.splice(2,0,',')
+  price_string.splice(5,0,',')
+  newData[key]["price"] = "BDT " + price_string.join('');
+})
+
+data = newData;
+
 const populate = (flat_name) => {
+  
   console.log("called");
   document.querySelector('#address-short').innerHTML = navbar_data.address_short;
   populate_general("", document, data[flat_name]);
@@ -875,7 +899,7 @@ const populate_home = () => {
         <!-- Object - Vertical -->
         <div class="object object-vertical">
             <div class="object-image" style="min-height:250px; display:flex; align-items:center">
-                <a class="link-inherit" href="flats/${key}.html"><img src="${data[key].landing_img.split('/').splice(1).join('/')}" alt=""></a>
+                <a class="link-inherit" href="flats/${key}.php"><img src="${data[key].landing_img.split('/').splice(1).join('/')}" alt=""></a>
             </div>
             <div class="object-content">
                 <h5 class="object-title"><a class="link-inherit" href="flats/${key}.html">${data[key].flat_name}</a></h5>
@@ -892,7 +916,7 @@ const populate_home = () => {
     list_container.innerHTML += `
       <div class="object object-horizontal">
         <div class="object-image">
-            <a class="link-inherit" href="falts/${key}.html"><img src="${data[key].landing_img.split('/').splice(1).join('/')}" alt=""></a>
+            <a class="link-inherit" href="flalts/${key}.php"><img src="${data[key].landing_img.split('/').splice(1).join('/')}" alt=""></a>
         </div>
         <div class="object-content">
             <h5 class="object-title"><a class="link-inherit" href="flats/${key}.html">${data[key].flat_name}</a></h5>
