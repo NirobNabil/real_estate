@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <!-- Title -->
-<title>Lilly Builders</title>
+<title>Lily Builders</title>
 
 <!-- Favicons -->
 <link rel="shortcut icon" href="assets/img/favicon.png">
@@ -58,7 +58,7 @@
 
         <!-- Module - Objects -->
         <div class="module module-object" data-toggle="panel-objects">
-            <!-- <img class="object-image" src="assets/img/home/thumbnail.png" alt=""> -->
+            <img class="object-image" width="50px" src="assets/img/home/location.png" alt="">
             <span id="address-short" class="object-name"></span>
             <span class="object-indicator"><i class="ti ti-menu"></i></span>
         </div>
@@ -112,7 +112,7 @@
                 <div class="row gutters-lg align-items-center">
                     <div class="col-lg-4">
                         <span class="badge badge-default mb-5"><i class="fa fa-check-circle text-success"></i>Ready to sell</span>
-                        <h1 class="mb-0">Lilly Builders</h1>
+                        <h1 class="mb-0">Lily Builders</h1>
                         <p class="lead text-muted mb-5">60/1 R.N.D road, Lalbagh ,Dhaka-1211</p>
                         <!-- Feature #1 -->
                         <div class="feature feature-1 mb-0">
@@ -399,15 +399,16 @@
                         <h1>Brochure</h1>
                         <!-- <p class="lead mb-5">Mauris dolor orci, sagittis ut varius in, interdum nec sapien. Mauris rutrum lacinia orci nec maximus.</p> -->
                         <!-- Feature #1 -->
-                        <a href="assets/brochure/Lily Complex Brochure Final.pdf" class="btn btn-primary mb-4" style="color:#fff">Download</a>
+                        <span class="brochure btn btn-primary mb-4" style="color:#fff; cursor:pointer">Download</span>
                     </div>
                     <div class="col-lg-8 col-sm-12">
                         <!-- Card -->
-                        <div class="card">
+                        <div class="card brochure" style="cursor:pointer">
                             <img src="assets/img/home/brochure.png" alt="" class="card-image">
                         </div>
                     </div>
                 </div>
+                <iframe name="download_iframe" id="download_iframe"></iframe>
             </div>
         </section>
 
@@ -419,7 +420,7 @@
                     <h2 class="mb-0">Get in touch <br> with Us!</h2>
                     <hr class="hr-primary">
                     <address>
-                        Lilly Builders<br>
+                        Lily Builders<br>
                         60/1 R.N.D road,<br>
                         Lalbagh ,Dhaka-1211<br>
                     </address>
@@ -454,7 +455,7 @@
                 </div>
                 <div class="content col-xl-3 col-md-4">
                     <address>
-                        Lilly Builders<br>
+                        Lily Builders<br>
                         60/1 R.N.D road,<br>
                         Lalbagh ,Dhaka-1211<br>
                     </address>
@@ -492,7 +493,7 @@
                             src="assets/img/home/location.png" alt=""></a>
                     <div class="panel-objects-item-content">
                         <a href="index.php" class="link-reset">
-                            <h5 class="mb-0">60/1 R.N.D road , Lalbagh ,Dhaka-1211</h5>
+                            <h5 class="mb-0"> Lily Complex</h5>
                             <ul class="list-inline mb-0">
                                 <!-- <li class="list-inline-item"><span class="text-muted">Total area:</span> 22m</li>
                                 <li class="list-inline-item"><span class="text-muted">Number of flats:</span> 32</li> -->
@@ -536,7 +537,7 @@
 <script src="assets/plugins/twitter-fetcher/js/twitterFetcher_min.js"></script>
 
 <!-- JS Core -->
-<script src="assets/js/core.min.js"></script>
+<script src="assets/js/core.js"></script>
 <script src="assets/js/populate_object.js"></script>
 
 <!-- JS Gallery -->

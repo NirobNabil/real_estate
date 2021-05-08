@@ -2,20 +2,20 @@ const floor = 1;
 const price_per_sq = 4500
 
 const navbar_data = {
-  "address_short": "Lalbagh, Dhaka-1211"
+  "address_short": "Lily Complex"
 }
 
 const mother_video_link = "https://www.youtube.com/embed/tYwfavQL9yU"; 
 
 const social_links =  {
-  "google": "asbdhabsd",
-  "facebook": "https://www.facebook.com",
-  "instagram": "gggg"
+  "google": "https://www.google.com/search?client=firefox-b-d&q=lily+builders",
+  "facebook": "https://www.facebook.com/Lily-Builders-107411038022640/",
+  "instagram": "https://www.facebook.com/Lily-Builders-107411038022640/"
 }
 
 const slideshow_overlay = "";
 
-const slideshow_overlay_arr = ["Lilly complex", slideshow_overlay, slideshow_overlay, slideshow_overlay, slideshow_overlay]
+const slideshow_overlay_arr = ["Lily complex", slideshow_overlay, slideshow_overlay, slideshow_overlay, slideshow_overlay]
 
 const home_data = {
   "slideshow": [
@@ -836,6 +836,10 @@ const populate_slideshow = slideshow => {
     })
   })
 }
+
+document.querySelectorAll('.brochure').forEach( e => {
+  e.addEventListener('click', () => document.querySelector('#download_iframe').src = "assets/brochure/Lily Complex Brochure Final.pdf")
+} )
 
 const pop_map = {
   "features-feature_list": populate_features,

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Title -->
-    <title>Chata - Modern Real Estate Template + E-Commerce</title>
+    <title>Lily Builders</title>
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="../assets//img/favicon.png">
@@ -283,7 +283,7 @@
                     </div>
                     <div class="content col-xl-4 col-md-5">
                         <address>
-                            Lilly Builders<br>
+                            Lily Builders<br>
                             60/1 R.N.D road,<br>
                             Lalbagh ,Dhaka-1211<br>
                         </address>
