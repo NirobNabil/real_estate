@@ -1349,12 +1349,12 @@ img {
 
 .feature-1 .icon {
   float: left;
-  padding-top: 0.75rem;
+  /* padding-top: 0.75rem; */
 }
 
-.feature-2 {
+/* .feature-2 {
   min-height: 7rem;
-}
+} */
 
 .feature-2 .feature-content {
   padding-left: 55px;
@@ -1362,7 +1362,33 @@ img {
 
 .feature-2 .icon {
   float: left;
-  padding-top: 0.75rem;
+  /* padding-top: 0.75rem; */
+}
+
+/* .feature-3 {
+  min-height: 7rem;
+} */
+
+.feature-3 .feature-content {
+  padding-left: 55px;
+}
+
+.feature-3 .icon {
+  float: left;
+  /* padding-top: 0.75rem; */
+}
+
+.feature-4 {
+  min-height: 7rem;
+}
+
+.feature-4 .feature-content {
+  padding-left: 55px;
+}
+
+.feature-4 .icon {
+  float: left;
+  /* padding-top: 0.75rem; */
 }
 
 /* 4.3 Objects
@@ -1410,7 +1436,7 @@ img {
 
 .object .object-price {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.6em;
+  font-size: 1.4em;
   display: block;
   font-weight: 400;
   color: #3D64CC;
@@ -1559,6 +1585,7 @@ img {
 }
 
 .object-box .object-content .object-price {
+  font-size: 1.2rem;
   line-height: 1.2;
 }
 
@@ -2273,7 +2300,7 @@ pre {
   margin-top: 1rem;
   left: 50%;
   display: block;
-  width: 150px;
+  width: 100px;
   line-height: 1.2;
   text-align: center;
   -webkit-transform: translateX(-50%);
@@ -2284,8 +2311,12 @@ pre {
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 600;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-  opacity: 0.4;
+  color: #FEFEFE;
+  padding: 5px;
+  background: #222;
+  border-radius: 1em;
+  /* filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10); */
+  opacity: 1;
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
   -o-transition: all 0.25s ease-out;

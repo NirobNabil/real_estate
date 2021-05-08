@@ -16,7 +16,7 @@
   * Fixed issue with contenteditable elements in forms where events for single input validation would cause exceptions
 
 ## Demo
-  * Add links to Bootstrap and Semantic-UI demos to index.html
+  * Add links to Bootstrap and Semantic-UI demos to index.php
   * Use `.on()` instead of `.validateDelegate()`
 
 ## Localization

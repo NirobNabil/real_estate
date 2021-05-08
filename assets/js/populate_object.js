@@ -5,7 +5,7 @@ const navbar_data = {
   "address_short": "Lalbagh, Dhaka-1211"
 }
 
-const mother_video_link = "https://www.youtube.com/embed/dQw4w9WgXcQ"; 
+const mother_video_link = "https://www.youtube.com/embed/tYwfavQL9yU"; 
 
 const social_links =  {
   "google": "asbdhabsd",
@@ -13,19 +13,27 @@ const social_links =  {
   "instagram": "gggg"
 }
 
+const slideshow_overlay = "";
+
+const slideshow_overlay_arr = ["Lilly complex", slideshow_overlay, slideshow_overlay, slideshow_overlay, slideshow_overlay]
+
 const home_data = {
   "slideshow": [
-    {"name": "Neat architectural design", "img": "assets/img/slideshow/1.png"},
-    {"name": "Neat architectural design2", "img": "assets/img/slideshow/2.png"},
-    {"name": "Neat architectural design3", "img": "assets/img/slideshow/3.png"},
-    {"name": "Neat architectural design4", "img": "assets/img/slideshow/4.png"},
-    {"name": "Neat architectural design5", "img": "assets/img/slideshow/5.png"},
+    {"name": slideshow_overlay_arr[0], "img": "assets/img/slideshow/1.png"},
+    {"name": slideshow_overlay_arr[1], "img": "assets/img/slideshow/2.png"},
+    {"name": slideshow_overlay_arr[2], "img": "assets/img/slideshow/3.png"},
+    {"name": slideshow_overlay_arr[3], "img": "assets/img/slideshow/4.png"},
+    {"name": slideshow_overlay_arr[4], "img": "assets/img/slideshow/5.png"},
   ],
   "gallery": [
     {"img": "assets/img/slideshow/1.png"},
     {"img": "assets/img/slideshow/2.png"},
     {"img": "assets/img/slideshow/3.png"},
     {"img": "assets/img/slideshow/4.png"},
+    {"img": "assets/img/slideshow/5.png"},    
+    {"img": "assets/img/slideshow/6.png"},    
+    {"img": "assets/img/slideshow/7.png"},    
+    {"img": "assets/img/slideshow/8.png"},    
     {"img": "assets/img/slideshow/5.png"},    
   ],
 }
@@ -164,7 +172,7 @@ let data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/B/Unit-B-2.png",
-      "video": "mother_video_link",
+      "video": mother_video_link,
     },
     "features": {
       "headline": "Features",
@@ -241,7 +249,7 @@ let data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/C/Unit-C-2.png",
-      "video": "mother_video_link",
+      "video": mother_video_link,
     },
     "features": {
       "headline": "Features",
@@ -317,7 +325,7 @@ let data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/D/Unit-D-2.png",
-      "video": "mother_video_link",
+      "video": mother_video_link,
     },
     "features": {
       "headline": "Features",
@@ -393,7 +401,7 @@ let data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/E/Unit-E-2.png",
-      "video": "mother_video_link",
+      "video": mother_video_link,
     },
     "features": {
       "headline": "Features",
@@ -469,7 +477,7 @@ let data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/F/Unit-F-2.png",
-      "video": "mother_video_link",
+      "video": mother_video_link,
     },
     "features": {
       "headline": "Features",
@@ -545,7 +553,7 @@ let data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/G/Unit-G-2.png",
-      "video": "mother_video_link",
+      "video": mother_video_link,
     },
     "features": {
       "headline": "Features",
@@ -616,7 +624,7 @@ let data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/H/Unit-H-2.png",
-      "video": "mother_video_link",
+      "video": mother_video_link,
     },
     "features": {
       "headline": "Features",
@@ -687,7 +695,7 @@ let data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/I/Unit-I-2.png",
-      "video": "mother_video_link",
+      "video": mother_video_link,
     },
     "features": {
       "headline": "Features",
@@ -758,7 +766,7 @@ let data = {
     "promo": {
       "headline": "Neat &amp; Modern Interiors",
       "background": "../assets/img/flats/J/Unit-J-2.png",
-      "video": "mother_video_link",
+      "video": mother_video_link,
     },
     "features": {
       "headline": "Features",

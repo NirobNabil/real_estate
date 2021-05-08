@@ -44,7 +44,7 @@
 
             <!-- Module - Navigation Back -->
             <div class="module module-back">
-                <a href="../index.html" class="nav-back"><i class="fa fa-angle-left"></i></a>
+                <a href="../index.php" class="nav-back"><i class="fa fa-angle-left"></i></a>
             </div>
 
             <!-- Module - Navigation -->
@@ -279,7 +279,7 @@
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-md-3 text-center text-md-left mb-5 mb-md-0">
-                        <a href="../index.html"><img src="../assets/img/logo-light.svg" width="120" alt=""></a>
+                        <a href="../index.php"><img src="../assets/img/logo-light.svg" width="120" alt=""></a>
                     </div>
                     <div class="content col-xl-4 col-md-5">
                         <address>
@@ -319,10 +319,10 @@
                 <div class="col-md-4 col-sm-6">
                     <!-- Panel Objects Item -->
                     <div class="panel-objects-item">
-                        <a href="../index.html" class="panel-objects-item-image"><img src="../assets/img/home/thumbnail.jpg"
+                        <a href="../index.php" class="panel-objects-item-image"><img src="../assets/img/home/location.png"
                                 alt=""></a>
                         <div class="panel-objects-item-content">
-                            <a href="../index.html" class="link-reset">
+                            <a href="../index.php" class="link-reset">
                                 <h5 class="mb-0">60/1 R.N.D road , Lalbagh ,Dhaka-1211</h5>
                                 <ul class="list-inline mb-0">
                                     <!-- <li class="list-inline-item"><span class="text-muted">Total area:</span> 22m</li>
