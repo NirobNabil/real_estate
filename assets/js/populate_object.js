@@ -902,13 +902,13 @@ const populate_home = () => {
                 <a class="link-inherit" href="flats/${key}.php"><img src="${data[key].landing_img.split('/').splice(1).join('/')}" alt=""></a>
             </div>
             <div class="object-content">
-                <h5 class="object-title"><a class="link-inherit" href="flats/${key}.html">${data[key].flat_name}</a></h5>
+                <h5 class="object-title"><a class="link-inherit" href="flats/${key}.php">${data[key].flat_name}</a></h5>
                 <ul class="object-details list-unstyled">
                     <li><span class="text-muted">Total area:</span> ${data[key].area}</li>
                     <li><span class="text-muted">Bedrooms:</span> ${data[key].details.bedrooms}</li>
                 </ul>
                 <span class="object-price">${data[key].price}</span>
-                <a href="flats/${key}.html" class="object-btn btn btn-secondary"><span class="hidden-xs-down">View</span> Details</a>
+                <a href="flats/${key}.php" class="object-btn btn btn-secondary"><span class="hidden-xs-down">View</span> Details</a>
             </div> 
         </div>
       </div>
@@ -919,14 +919,14 @@ const populate_home = () => {
             <a class="link-inherit" href="flalts/${key}.php"><img src="${data[key].landing_img.split('/').splice(1).join('/')}" alt=""></a>
         </div>
         <div class="object-content">
-            <h5 class="object-title"><a class="link-inherit" href="flats/${key}.html">${data[key].flat_name}</a></h5>
+            <h5 class="object-title"><a class="link-inherit" href="flats/${key}.php">${data[key].flat_name}</a></h5>
                 <ul class="object-details list-unstyled">
                     <li><span class="text-muted">Total area:</span> ${data[key].area}</li>
                     <li><span class="text-muted">Bedrooms:</span> ${data[key].details.bedrooms}</li>
                 </ul>
                 <span class="object-price">${data[key].price}</span>
         </div> 
-        <a href="flats/${key}.html" class="object-btn btn btn-secondary"><span class="hidden-xs-down">View</span> Details</a>
+        <a href="flats/${key}.php" class="object-btn btn btn-secondary"><span class="hidden-xs-down">View</span> Details</a>
       </div>
     `
   } )
