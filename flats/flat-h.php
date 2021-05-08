@@ -226,7 +226,7 @@
                                             <span id="card-price" class="object-price text-primary text-lg"></span>
                                         </div>
                                         <div class="col-6">
-                                            <strong class="text-muted">Price per m<sup>2</sup>:</strong>
+                                            <strong class="text-muted">Price per ft<sup>2</sup>:</strong>
                                             <span id="card-price_per_m2" class="object-price"></span>
                                         </div>
                                     </div>
@@ -288,7 +288,7 @@
                             Lalbagh ,Dhaka-1211<br>
                         </address>
                         <p class="lead">
-                            E: <a class="link-inherit" href="mailto:lilybuilders.bd@gmail.com">lilybuilders.bd@gmail.com</a><br>
+                            E: <a class="link-inherit" href="mailto:ask@lilybuilders.com">ask@lilybuilders.com</a><br>
                             P: +8801872796650
                         </p>
                         <a class="facebook_link" href="#" class="icon icon-circle icon-sm icon-facebook"><i

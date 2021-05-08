@@ -1,5 +1,5 @@
 const floor = 1;
-const price_per_sq = 4500
+const price_per_sq = 1
 
 const navbar_data = {
   "address_short": "Lily Complex"
@@ -19,22 +19,22 @@ const slideshow_overlay_arr = ["Lily complex", slideshow_overlay, slideshow_over
 
 const home_data = {
   "slideshow": [
-    {"name": slideshow_overlay_arr[0], "img": "assets/img/slideshow/1.png"},
-    {"name": slideshow_overlay_arr[1], "img": "assets/img/slideshow/2.png"},
-    {"name": slideshow_overlay_arr[2], "img": "assets/img/slideshow/3.png"},
-    {"name": slideshow_overlay_arr[3], "img": "assets/img/slideshow/4.png"},
-    {"name": slideshow_overlay_arr[4], "img": "assets/img/slideshow/5.png"},
+    {"name": slideshow_overlay_arr[0], "img": "assets/img/slideshow/1.jpg"},
+    {"name": slideshow_overlay_arr[1], "img": "assets/img/slideshow/2.jpg"},
+    {"name": slideshow_overlay_arr[2], "img": "assets/img/slideshow/3.jpg"},
+    {"name": slideshow_overlay_arr[3], "img": "assets/img/slideshow/4.jpg"},
+    {"name": slideshow_overlay_arr[4], "img": "assets/img/slideshow/5.jpg"},
   ],
   "gallery": [
-    {"img": "assets/img/slideshow/1.png"},
-    {"img": "assets/img/slideshow/2.png"},
-    {"img": "assets/img/slideshow/3.png"},
-    {"img": "assets/img/slideshow/4.png"},
-    {"img": "assets/img/slideshow/5.png"},    
-    {"img": "assets/img/slideshow/6.png"},    
-    {"img": "assets/img/slideshow/7.png"},    
-    {"img": "assets/img/slideshow/8.png"},    
-    {"img": "assets/img/slideshow/5.png"},    
+    {"img": "assets/img/slideshow/1.jpg"},
+    {"img": "assets/img/slideshow/2.jpg"},
+    {"img": "assets/img/slideshow/3.jpg"},
+    {"img": "assets/img/slideshow/4.jpg"},
+    {"img": "assets/img/slideshow/5.jpg"},    
+    {"img": "assets/img/slideshow/6.jpg"},    
+    {"img": "assets/img/slideshow/7.jpg"},    
+    {"img": "assets/img/slideshow/8.jpg"},    
+    {"img": "assets/img/slideshow/5.jpg"},    
   ],
 }
 
@@ -110,7 +110,7 @@ let data = {
       "area": "<strong>1159ft<sup>2</sup><strong>",
       "floor": floor,
       "price": "BDT 55,63,200",
-      "price_per_m2": "4800BDT"
+      "price_per_m2": "BDT " + price_per_sq
     }
   },
   "flat-b": {
@@ -192,7 +192,7 @@ let data = {
       "area": "<strong>1159ft<sup>2</sup><strong>",
       "floor": floor,
       "price": "BDT 54,52,800",
-      "price_per_m2": "4800BDT"
+      "price_per_m2": "BDT " + price_per_sq
     }
   },
   "flat-c": {
@@ -269,7 +269,7 @@ let data = {
       "area": "<strong>1034ft<sup>2</sup><strong>",
       "floor": floor,
       "price": "BDT 49,63,200",
-      "price_per_m2": "4800BDT"
+      "price_per_m2": "BDT " + price_per_sq
     }
   },
   "flat-d": {
@@ -345,7 +345,7 @@ let data = {
       "area": "<strong>1048ft<sup>2</sup><strong>",
       "floor": floor,
       "price": "BDT 50,30,400",
-      "price_per_m2": "4800BDT"
+      "price_per_m2": "BDT " + price_per_sq
     }
   },
   "flat-e": {
@@ -421,7 +421,7 @@ let data = {
       "area": "<strong>1048ft<sup>2</sup><strong>",
       "floor": floor,
       "price": "BDT 54,48,000",
-      "price_per_m2": "4800BDT"
+      "price_per_m2": "BDT " + price_per_sq
     }
   },
   "flat-f": {
@@ -497,7 +497,7 @@ let data = {
       "area": "<strong>1100ft<sup>2</sup><strong>",
       "floor": floor,
       "price": "BDT 52,80,000",
-      "price_per_m2": "4800BDT"
+      "price_per_m2": "BDT " + price_per_sq
     }
   },
   "flat-g": {
@@ -573,7 +573,7 @@ let data = {
       "area": "<strong>1365ft<sup>2</sup><strong>",
       "floor": floor,
       "price": "BDT 65,52,000",
-      "price_per_m2": "4800BDT"
+      "price_per_m2": "BDT " + price_per_sq
     }
   },
   "flat-h": {
@@ -644,7 +644,7 @@ let data = {
       "area": "<strong>1140ft<sup>2</sup><strong>",
       "floor": floor,
       "price": "BDT 54,72,000",
-      "price_per_m2": "4800BDT"
+      "price_per_m2": "BDT " + price_per_sq
     }
   },
   "flat-i": {
@@ -715,7 +715,7 @@ let data = {
       "area": "<strong>1100ft<sup>2</sup><strong>",
       "floor": floor,
       "price": "BDT 52,80,000",
-      "price_per_m2": "4800BDT"
+      "price_per_m2": "BDT " + price_per_sq
     }
   },
   "flat-j": {
@@ -786,7 +786,7 @@ let data = {
       "area": "<strong>1100ft<sup>2</sup><strong>",
       "floor": floor,
       "price": "BDT 52,80,000",
-      "price_per_m2": "4800BDT"
+      "price_per_m2": "BDT " + price_per_sq
     }
   },
 }
@@ -875,6 +875,7 @@ Object.keys(data).map( key => {
   if(price_string.length > 3 ) price_string.splice(price_string.length - 3,0,',')
   if(price_string.length > 6 ) price_string.splice(price_string.length - 6,0,',')
   newData[key]["price"] = "BDT " + price_string.join('');
+  newData[key]["card"]["price"] = "BDT " + price_string.join('');
 })
 
 data = newData;

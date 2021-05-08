@@ -152,7 +152,7 @@
 
             <!-- Objects - Search -->
             <div class="objects-search bg-dark dark">
-                <div class="bg-image-holder bg-image-fixed zooming"><img src="assets/img/photos/search-bg.png" alt=""></div>
+                <div class="bg-image-holder bg-image-fixed zooming"><img src="assets/img/photos/search-bg.jpg" alt=""></div>
                 <div class="container">
                     <!-- <h1 class="mb-1">Find perfect flat for you!</h1>
                     <p class="lead text-muted">Put some details about your requirmets or view flats on list below.</p>
@@ -348,7 +348,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <figure class="media-box">
-                            <div class="image"><img src="assets/img/home/thumbnail.png" alt=""></div>
+                            <div class="image"><img src="assets/img/home/thumbnail.jpg" alt=""></div>
                             <button id="about-video" class="btn-play animated" data-animation="fadeInUp" data-toggle="video-modal" data-target="#modalVideo"></button>
                         </figure>
                     </div>
@@ -425,12 +425,12 @@
                         Lalbagh ,Dhaka-1211<br>
                     </address>
                     <p class="lead">
-                        E: <a class="link-inherit" href="#">lilybuilders.bd@gmail.com</a><br>
+                        E: <a class="link-inherit" href="#">ask@lilybuilders.com</a><br>
                         P: +8801872796650
                     </p>
-                    <a href="#" class="icon icon-circle icon-sm icon-facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="icon icon-circle icon-sm icon-google"><i class="fa fa-google"></i></a>
-                    <a href="#" class="icon icon-circle icon-sm icon-instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="facebook_link icon icon-circle icon-sm icon-facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="google_link icon icon-circle icon-sm icon-google"><i class="fa fa-google"></i></a>
+                    <a href="#" class="instagram_link icon icon-circle icon-sm icon-instagram"><i class="fa fa-instagram"></i></a>
                 </div>
                 <div class="image col-xl-8 col-md-7">
                     <!-- <div id="google-map" class="bg-map" data-latitude="23.714305528439926" data-longitude="90.38287928389234" data-style="wy"></div> -->
@@ -460,7 +460,7 @@
                         Lalbagh ,Dhaka-1211<br>
                     </address>
                     <p class="lead">
-                        E: <a class="link-inherit" href="#">lilybuilders.bd@gmail.com</a><br>
+                        E: <a class="link-inherit" href="#">ask@lilybuilders.com</a><br>
                         P: +8801872796650
                     </p>
                     <a class="facebook_link" href="#" class="icon icon-circle icon-sm icon-facebook"><i class="fa fa-facebook"></i></a>
