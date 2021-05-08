@@ -1,0 +1,12 @@
+[08-May-2021 01:17:03 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\Exception' not found in /home/lilybuil/public_html/flats/assets/php/PHPMailer/src/PHPMailer.php:1561
+Stack trace:
+#0 /home/lilybuil/public_html/flats/assets/php/PHPMailer/src/PHPMailer.php(1464): PHPMailer\PHPMailer\PHPMailer->preSend()
+#1 /home/lilybuil/public_html/flats/assets/php/offer-form.php(26): PHPMailer\PHPMailer\PHPMailer->send()
+#2 {main}
+  thrown in /home/lilybuil/public_html/flats/assets/php/PHPMailer/src/PHPMailer.php on line 1561
+[08-May-2021 01:19:37 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\Exception' not found in /home/lilybuil/public_html/flats/assets/php/PHPMailer/src/PHPMailer.php:1561
+Stack trace:
+#0 /home/lilybuil/public_html/flats/assets/php/PHPMailer/src/PHPMailer.php(1464): PHPMailer\PHPMailer\PHPMailer->preSend()
+#1 /home/lilybuil/public_html/flats/assets/php/offer-form.php(26): PHPMailer\PHPMailer\PHPMailer->send()
+#2 {main}
+  thrown in /home/lilybuil/public_html/flats/assets/php/PHPMailer/src/PHPMailer.php on line 1561

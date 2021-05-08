@@ -1,5 +1,5 @@
 const floor = 1;
-const price_per_sq = 4800
+const price_per_sq = 4500
 
 const navbar_data = {
   "address_short": "Lalbagh, Dhaka-1211"
@@ -95,7 +95,7 @@ let data = {
     "features": {
       "headline": "Features",
       "subtitle": "",
-      "img": "../assets/img/photos/about03.jpg",
+      "img": "../assets/img/flats/features.jpeg",
       "feature_list": [
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
@@ -177,7 +177,7 @@ let data = {
     "features": {
       "headline": "Features",
       "subtitle": "",
-      "img": "../assets/img/photos/about03.jpg",
+      "img": "../assets/img/flats/features.jpeg",
       "feature_list": [
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
@@ -254,7 +254,7 @@ let data = {
     "features": {
       "headline": "Features",
       "subtitle": "",
-      "img": "../assets/img/photos/about03.jpg",
+      "img": "../assets/img/flats/features.jpeg",
       "feature_list": [
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
@@ -330,7 +330,7 @@ let data = {
     "features": {
       "headline": "Features",
       "subtitle": "",
-      "img": "../assets/img/photos/about03.jpg",
+      "img": "../assets/img/flats/features.jpeg",
       "feature_list": [
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
@@ -406,7 +406,7 @@ let data = {
     "features": {
       "headline": "Features",
       "subtitle": "",
-      "img": "../assets/img/photos/about03.jpg",
+      "img": "../assets/img/flats/features.jpeg",
       "feature_list": [
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
@@ -482,7 +482,7 @@ let data = {
     "features": {
       "headline": "Features",
       "subtitle": "",
-      "img": "../assets/img/photos/about03.jpg",
+      "img": "../assets/img/flats/features.jpeg",
       "feature_list": [
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
@@ -558,7 +558,7 @@ let data = {
     "features": {
       "headline": "Features",
       "subtitle": "",
-      "img": "../assets/img/photos/about03.jpg",
+      "img": "../assets/img/flats/features.jpeg",
       "feature_list": [
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
@@ -629,12 +629,12 @@ let data = {
     "features": {
       "headline": "Features",
       "subtitle": "",
-      "img": "../assets/img/photos/about03.jpg",
+      "img": "../assets/img/flats/features.jpeg",
       "feature_list": [
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
         {"icon": "ti-shine", "name": "Convention hall",},
-        {"icon": "ti-shine", "name": "Playground space"}
+        {"icon": "ti-shine", "name": "Playground space"},
       ]
     },
     "card": {
@@ -700,7 +700,7 @@ let data = {
     "features": {
       "headline": "Features",
       "subtitle": "",
-      "img": "../assets/img/photos/about03.jpg",
+      "img": "../assets/img/flats/features.jpeg",
       "feature_list": [
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
@@ -771,7 +771,7 @@ let data = {
     "features": {
       "headline": "Features",
       "subtitle": "",
-      "img": "../assets/img/photos/about03.jpg",
+      "img": "../assets/img/flats/features.jpeg",
       "feature_list": [
         {"icon": "ti-shine", "name": "Mosque"}, 
         {"icon": "ti-shine", "name": "Gymnasium",},
@@ -868,8 +868,8 @@ Object.keys(data).map( key => {
   newData[key] = data[key];
   price_string = String(price_per_sq * parseInt(data[key]["area"].split('>')[1].split('f')[0]));
   price_string = price_string.split('')
-  price_string.splice(2,0,',')
-  price_string.splice(5,0,',')
+  if(price_string.length > 3 ) price_string.splice(price_string.length - 3,0,',')
+  if(price_string.length > 6 ) price_string.splice(price_string.length - 6,0,',')
   newData[key]["price"] = "BDT " + price_string.join('');
 })
 

@@ -152,7 +152,7 @@
 
             <!-- Objects - Search -->
             <div class="objects-search bg-dark dark">
-                <div class="bg-image-holder bg-image-fixed zooming"><img src="assets/img/photos/search-bg.jpg" alt=""></div>
+                <div class="bg-image-holder bg-image-fixed zooming"><img src="assets/img/photos/search-bg.png" alt=""></div>
                 <div class="container">
                     <!-- <h1 class="mb-1">Find perfect flat for you!</h1>
                     <p class="lead text-muted">Put some details about your requirmets or view flats on list below.</p>
@@ -607,7 +607,7 @@
 </script>
 
 <!-- JS Google Map -->
-<!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
+<!--  -->
 
 </body>
 

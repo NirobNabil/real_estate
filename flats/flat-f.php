@@ -436,7 +436,7 @@
     </script>
 
     <!-- JS Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    
 
 </body>
 
