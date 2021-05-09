@@ -912,7 +912,7 @@ const populate_home = () => {
         <!-- Object - Vertical -->
         <div class="object object-vertical">
             <div class="object-image" style="min-height:250px; display:flex; align-items:center">
-                <a class="link-inherit" href="flats/${key}.php"><img src="${data[key].landing_img.split('/').splice(1).join('/')}" alt=""></a>
+                <a class="link-inherit" href="flats/${key}.php"><img src="${data[key].landing_img.split('/').splice(1).join('/').split('.')[0] + "-c.jpg"}" alt=""></a>
             </div>
             <div class="object-content">
                 <h5 class="object-title"><a class="link-inherit" href="flats/${key}.php">${data[key].flat_name}</a></h5>
@@ -929,7 +929,7 @@ const populate_home = () => {
     list_container.innerHTML += `
       <div class="object object-horizontal">
         <div class="object-image">
-            <a class="link-inherit" href="flalts/${key}.php"><img src="${data[key].landing_img.split('/').splice(1).join('/')}" alt=""></a>
+            <a class="link-inherit" href="flalts/${key}.php"><img src="${data[key].landing_img.split('/').splice(1).join('/').split(".")[0] + "-c.jpg"}" alt=""></a>
         </div>
         <div class="object-content">
             <h5 class="object-title"><a class="link-inherit" href="flats/${key}.php">${data[key].flat_name}</a></h5>
