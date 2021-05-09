@@ -279,7 +279,7 @@
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-md-3 text-center text-md-left mb-5 mb-md-0">
-                        <a href="../index.php"><img src="../assets/img/logo-light.svg" width="120" alt=""></a>
+                        <a href="../index.php"><img src="../assets/img/logo-light.png" width="120" alt=""></a>
                     </div>
                     <div class="content col-xl-4 col-md-5">
                         <address>
