@@ -291,12 +291,9 @@
                             E: <a class="link-inherit" href="mailto:ask@lilybuilders.com">ask@lilybuilders.com</a><br>
                             P: +8801872796650
                         </p>
-                        <a class="facebook_link" href="#" class="icon icon-circle icon-sm icon-facebook"><i
-                                class="fa fa-facebook"></i></a>
-                        <a class="google_link" href="#" class="icon icon-circle icon-sm icon-google"><i
-                                class="fa fa-google"></i></a>
-                        <a class="instagram_link" href="#" class="icon icon-circle icon-sm icon-instagram"><i
-                                class="fa fa-instagram"></i></a>
+                        <a class="facebook_link" href="#" style="padding-right: 8px" class="icon icon-circle icon-sm icon-facebook"><i class="fa fa-facebook"></i></a>
+                    <a class="google_link" href="#" style="padding-right: 8px" class="icon icon-circle icon-sm icon-google"><i class="fa fa-google"></i></a>
+                    <a class="instagram_link" href="#" class="icon icon-circle icon-sm icon-instagram"><i class="fa fa-instagram"></i></a>
                     </div>
                 </div>
             </div>

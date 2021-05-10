@@ -838,7 +838,7 @@ const populate_slideshow = slideshow => {
 }
 
 document.querySelectorAll('.brochure').forEach( e => {
-  e.addEventListener('click', () => document.querySelector('#download_iframe').src = "assets/brochure/Lily Complex Brochure Final.pdf")
+  e.addEventListener('click', () => document.querySelector('#download_iframe').src = "download.php?path=assets/brochure/Lily Complex Brochure Final.pdf")
 } )
 
 const pop_map = {

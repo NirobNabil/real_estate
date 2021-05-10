@@ -1,4 +1,4 @@
-const data = {
+let data = {
   "Large flat": {
     "area": "<strong>42m<sup>2</sup><strong>",
     "rooms": 72,
